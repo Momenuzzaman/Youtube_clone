@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  typography,
-  Card,
-  CardContent,
-  CardMedia,
-  Typography,
-} from "@mui/material";
+import { CardContent, Card, CardMedia, Typography } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
 import {
   demoThumbnailUrl,
@@ -37,7 +31,7 @@ const VideoCard = ({
           sx={{ width: 358, height: 180 }}
         />
       </Link>
-      <Card
+      <CardContent
         sx={{
           backgroundColor: "#1e1e1e",
           height: "106px",
@@ -61,7 +55,7 @@ const VideoCard = ({
             />
           </Typography>
         </Link>
-      </Card>
+      </CardContent>
     </Card>
   );
 };
