@@ -39,12 +39,12 @@ const VideoCard = ({
         }}
       >
         <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
-          <Typography variant="subtitle1" font-weight="bold" color="#FFF">
+          <Typography variant="subtitle1" fontWeight="bold" color="#FFF">
             {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}
           </Typography>
         </Link>
         <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
-          <Typography variant="subtitle2" font-weight="bold" color="gray">
+          <Typography variant="subtitle2" fontWeight="bold" color="gray">
             {snippet?.demoChannelTitle || demoChannelTitle}
             <CheckCircle
               sx={{
